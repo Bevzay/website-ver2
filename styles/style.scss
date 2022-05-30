@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'parallax';
+@import 'intro';
+@import 'navbar';
+@import 'cv';
+@import 'service';
+@import 'footer';
+
+* {
+    font-family: $body-font;
+}
+
+body {
+
+    p, ul {
+        font-size: 14px;
+        color: #0f0f0f;
+    }
+}

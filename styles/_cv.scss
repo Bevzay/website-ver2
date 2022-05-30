@@ -1,0 +1,30 @@
+.progress {
+    margin-top: 50px;
+
+    .progress-bar {
+        background: $purple;
+    }
+}
+
+.nav-tabs {
+
+    .nav-link {
+        color: $purple;
+    }
+}
+
+.tab-content {
+
+    position: relative;
+
+    .text-left {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+}
+
+.img-more {
+    height: auto;
+    width: 8%;
+}

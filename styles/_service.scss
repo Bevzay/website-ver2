@@ -1,0 +1,103 @@
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    margin: 16px auto;
+    box-shadow: 0 3px 7px rgba(black, 0.1);
+    margin-bottom: 1.6%;
+    background: whitesmoke;
+    line-height: 1.4;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0;
+
+    .read-more {
+        text-align: right;
+
+        a {
+            color: $darkgrey;
+            display: inline-block;
+            position: relative;
+            transition: $transition;
+        }
+
+        p {
+            position: relative; 
+            margin: 16px 0 0;
+        }
+    }
+
+    .photo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(100%);
+        transition: $transition;
+    }
+
+    .description {
+        padding: 16px;
+        background: whitesmoke;
+        position: relative;
+        z-index: 1;
+
+        h2 {
+            line-height: 1;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: $darkgrey;
+            margin-top: 5px;
+        }
+    }
+
+    .meta {
+        position: relative;
+        z-index: 0;
+        height: 200px;
+    }
+
+    .pic-1 {
+        background-image: url("../images/ecommerce.jpg");
+    }
+
+    .pic-2 {
+        background-image: url("../images/content-creation.jpg");
+    }
+
+    .pic-3 {
+        background-image: url("../images/social-media.jpg");
+    }
+
+    .pic-4 {
+        background-image: url("../images/email-automation.jpg");
+    }
+
+    .pic-5 {
+        background-image: url("../images/web-analytics.jpg");
+    }
+
+    .pic-6 {
+        background-image: url("../images/coming-soon.jpg");
+    }
+
+    &:hover {
+
+        .photo {
+            filter: grayscale(0);
+        }
+
+        .read-more {
+
+            a {
+                color: $purple;
+            }
+        }
+    }
+}
